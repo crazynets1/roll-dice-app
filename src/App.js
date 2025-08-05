@@ -12,6 +12,10 @@ function App() {
     return numArray
   }
 
+  function rollDices() {
+    setDices(generateRandomNums())
+  }
+
   const [dices, setDices] = React.useState(generateRandomNums())
   const diceElements = dices.map(dice => <Die value={dice}/>)
 
@@ -20,7 +24,7 @@ function App() {
       <div className="dice-container">
         {diceElements}
       </div>
-       <button className="roll-btn">Roll</button>
+       <button onClick={rollDices} className="roll-btn">Roll</button>
     </main>
   )
 }

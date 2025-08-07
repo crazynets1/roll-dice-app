@@ -58,8 +58,24 @@ button {
 
 .roll-btn{
     background-color: #5035FF;
-    width: 90px;
+    text-wrap: no-wrap;
+    width: auto;
     height: 50px;
     color: #FFFF;
     font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.title{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.title h1, p {
+    margin-top: 0;
+    margin-bottom: 0;
 }

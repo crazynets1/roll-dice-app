@@ -1,70 +1,54 @@
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Tenzies Game App
+This is a simple React application that implements the classic dice game "Tenzies". The goal of the game is to roll dice until all dice show the same value. Players can hold dice to prevent them from being re-rolled, and the game tracks the number of rolls taken to win.
 
+## Features
+- Roll 10 dice at once
+- Click on a die to hold its value between rolls
+- Win the game when all dice are held and show the same value
+- Track the number of rolls taken to win
+- Responsive and interactive UI
+
+## Getting Started
+
+### Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+#### Prerequisites
+- Node.js and npm installed on your machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Installation
+1. Clone the repository:
+	```bash
+	git clone https://github.com/crazynets1/tenzies-game-app.git
+	cd tenzies-game-app
+	```
+2. Install dependencies:
+	```bash
+	npm install
+	```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Running the App
+Start the development server:
+```bash
+npm start
+```
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/App.js` - Main game logic and UI
+- `src/Die.jsx` - Die component
+- `src/index.js` - Entry point
+- `src/index.css` - Styles
 
-### `npm run build`
+## How to Play
+1. Click the "Roll" button to roll all dice.
+2. Click on individual dice to "hold" their value.
+3. Continue rolling until all dice show the same value and are held.
+4. The game will display a winning message when completed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License.
